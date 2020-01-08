@@ -1,5 +1,3 @@
-ifeq ($(call my-dir),$(call project-path-for,qcom-gps))
-
 #set TARGET_USES_HARDWARE_QCOM_GPS to false to disable this project.
 
 ifeq ($(TARGET_USES_HARDWARE_QCOM_GPS),)
@@ -48,6 +46,4 @@ ifeq ($(TARGET_USES_HARDWARE_QCOM_GPS),true)
     endif #BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET
 
   endif #BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE
-endif
-
 endif
